@@ -268,35 +268,37 @@ export class Input extends React.Component<InputProps> implements WebEventRespon
         focusable={false}
         onPress={this.focus}
       >
-        <FalsyText
-          style={[evaStyle.label, styles.label]}
-          component={label}
-        />
-        <View style={[evaStyle.inputContainer, styles.inputContainer]}>
-          <FalsyFC
-            style={evaStyle.icon}
-            component={accessoryLeft}
+        <View>
+          <FalsyText
+            style={[evaStyle.label, styles.label]}
+            component={label}
           />
-          <TextInput
-            ref={this.textInputRef}
-            placeholderTextColor={evaStyle.placeholder.color}
-            {...textInputProps}
-            {...this.webEventResponder.eventHandlers}
-            testID={`@${testID}/input`}
-            style={[evaStyle.text, styles.text, platformStyles.text, textStyle]}
-            editable={!textInputProps.disabled}
-            onFocus={this.onTextFieldFocus}
-            onBlur={this.onTextFieldBlur}
-          />
-          <FalsyFC
-            style={evaStyle.icon}
-            component={accessoryRight}
+          <View style={[evaStyle.inputContainer, styles.inputContainer]}>
+            <FalsyFC
+              style={evaStyle.icon}
+              component={accessoryLeft}
+            />
+            <TextInput
+              ref={this.textInputRef}
+              placeholderTextColor={evaStyle.placeholder.color}
+              {...textInputProps}
+              {...this.webEventResponder.eventHandlers}
+              testID={`@${testID}/input`}
+              style={[evaStyle.text, styles.text, platformStyles.text, textStyle]}
+              editable={!textInputProps.disabled}
+              onFocus={this.onTextFieldFocus}
+              onBlur={this.onTextFieldBlur}
+            />
+            <FalsyFC
+              style={evaStyle.icon}
+              component={accessoryRight}
+            />
+          </View>
+          <FalsyText
+            style={[evaStyle.captionLabel, styles.captionLabel]}
+            component={caption}
           />
         </View>
-        <FalsyText
-          style={[evaStyle.captionLabel, styles.captionLabel]}
-          component={caption}
-        />
       </TouchableWithoutFeedback>
     );
   }
