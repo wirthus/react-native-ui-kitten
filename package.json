@@ -26,7 +26,7 @@
     "bump-version": "gulp bump-version && conventional-changelog -i CHANGELOG.md -s",
     "publish-docs": "npm run parse-docs && gulp publish-docs",
     "publish-packages": "gulp publish-packages",
-    "r": "rm -rf node_modules && rm -rf src/showcases/node_modules && rm -rf docs/node_modules && yarn",
+    "r": "rm -rf node_modules && find ./src -name \"node_modules\" -type d -prune -exec rm -rf '{}' + && rm -rf docs/node_modules && yarn",
     "check": "tsc --noEmit"
   },
   "dependencies": {
