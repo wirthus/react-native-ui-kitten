@@ -1,12 +1,12 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: [ '@typescript-eslint' ],
+  plugins: ['@typescript-eslint'],
   overrides: [
     {
-      files: [ '*.ts', '*.tsx' ],
+      files: ['*.ts', '*.tsx'],
       rules: {
-        '@typescript-eslint/no-shadow': [ 'error' ],
+        '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
         'no-undef': 'off',
         'react-native/no-raw-text': 'off',
@@ -17,7 +17,7 @@ module.exports = {
     },
   ],
   parserOptions: {
-    project: [ './tsconfig.json' ],
+    project: ['./tsconfig.eslint.json'],
     sourceType: 'module',
   },
   settings: {
