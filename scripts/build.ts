@@ -8,7 +8,7 @@ gulp.task('build', gulp.series(
 ));
 
 function compileTypescript(done: GulpCompletionCallback): void {
-  childProcess.execSync('tsc');
+  childProcess.execSync('tsc -p tsconfig.build.json');
   done();
 }
 
