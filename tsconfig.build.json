@@ -8,6 +8,7 @@
     "./src/**/package.json"
   ],
   "exclude": [
+    "./src/showcases",
     "./src/template-js",
     "./src/template-ts",
     "node_modules",
