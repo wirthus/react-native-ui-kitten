@@ -15,13 +15,18 @@ export class EvaIcon implements IconProvider<SvgProps> {
     const Icon: IconComponent = this.content;
 
     const { style, ...svgProps } = props;
+
+    const flattenStyle = StyleSheet.flatten(style || {});
+
     // @ts-ignore - UI Kitten components pass here `tintColor`
-    const fillColor: string = StyleSheet.flatten(style || {}).tintColor;
+    const tintColor = flattenStyle.tintColor;
+
+    delete flattenStyle['tintColor'];
 
     return (
       <Icon
         style={props.style}
-        fill={fillColor}
+        fill={tintColor}
         {...svgProps}
       />
     );
