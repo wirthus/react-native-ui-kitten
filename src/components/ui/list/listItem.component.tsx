@@ -223,6 +223,6 @@ const styles = StyleSheet.create({
 
 const webStyles = Platform.OS === 'web' && StyleSheet.create<WebStyles>({
   container: {
-    outlineWidth: 0,
+    // outlineWidth: 0,
   },
 });

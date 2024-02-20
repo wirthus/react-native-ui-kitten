@@ -41,7 +41,7 @@ import { TextProps } from '../text/text.component';
 
 export interface BaseDatepickerProps<D = Date> extends StyledComponentProps,
   TouchableOpacityProps,
-  BaseCalendarProps<D> {
+  Omit<BaseCalendarProps<D>, 'hitSlop'> {
 
   controlStyle?: StyleProp<ViewStyle>;
   label?: RenderProp<TextProps> | React.ReactText;

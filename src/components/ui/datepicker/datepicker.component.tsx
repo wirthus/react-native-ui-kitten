@@ -18,7 +18,7 @@ import {
 } from '../calendar/calendar.component';
 import { TextProps } from '../text/text.component';
 
-export interface DatepickerProps<D = Date> extends BaseDatepickerProps<D>, CalendarProps<D> {
+export interface DatepickerProps<D = Date> extends BaseDatepickerProps<D>, Omit<CalendarProps<D>, 'hitSlop'> {
   autoDismiss?: boolean;
 }
 

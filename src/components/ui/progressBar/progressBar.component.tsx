@@ -177,9 +177,8 @@ export class ProgressBar extends React.PureComponent<ProgressBarProps> {
       indicatorStyles.push(animationStyles);
     } else {
       const validProgress = this.clamp(progress);
-      const width = `${validProgress * 100}%`;
 
-      indicatorStyles.push({ width });
+      indicatorStyles.push({ width: `${validProgress * 100}%` });
     }
 
     return (
@@ -209,5 +208,3 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
 });
-
-
