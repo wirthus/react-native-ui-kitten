@@ -1,3 +1,37 @@
+## <small>5.3.2 (2024-02-20)</small>
+
+* chore: add .eslintignore ([4bebf3a](https://github.com/wirthus/react-native-ui-kitten/commit/4bebf3a))
+* chore: add tsconfig.build.json ([cab68c7](https://github.com/wirthus/react-native-ui-kitten/commit/cab68c7))
+* chore: add tsconfig.eslint.json ([317c356](https://github.com/wirthus/react-native-ui-kitten/commit/317c356))
+* chore: add type check script ([947bddb](https://github.com/wirthus/react-native-ui-kitten/commit/947bddb))
+* chore: fix tsconfig.build.json ([3937d8b](https://github.com/wirthus/react-native-ui-kitten/commit/3937d8b))
+* chore: fix tsconfig.eslint.json ([34fb704](https://github.com/wirthus/react-native-ui-kitten/commit/34fb704))
+* chore: migrate from yarn to pnpm ([cac909e](https://github.com/wirthus/react-native-ui-kitten/commit/cac909e))
+* chore: rename @ui-kitten -> @wirthus/ui-kitten ([65e2699](https://github.com/wirthus/react-native-ui-kitten/commit/65e2699))
+* chore: update @ui-kitten ([6e4e7c3](https://github.com/wirthus/react-native-ui-kitten/commit/6e4e7c3))
+* chore: update @ui-kitten/components ([bac1b74](https://github.com/wirthus/react-native-ui-kitten/commit/bac1b74))
+* chore: update @ui-kitten/date-fns ([5a5c3c5](https://github.com/wirthus/react-native-ui-kitten/commit/5a5c3c5))
+* chore: update @ui-kitten/eva-icons ([e4e17e5](https://github.com/wirthus/react-native-ui-kitten/commit/e4e17e5))
+* chore: update @ui-kitten/metro-config ([149ba33](https://github.com/wirthus/react-native-ui-kitten/commit/149ba33))
+* chore: update @ui-kitten/moment ([f3bc630](https://github.com/wirthus/react-native-ui-kitten/commit/f3bc630))
+* chore: update @ui-kitten/showcases ([cb39098](https://github.com/wirthus/react-native-ui-kitten/commit/cb39098))
+* chore: update lock file ([7603930](https://github.com/wirthus/react-native-ui-kitten/commit/7603930))
+* chore: update lock file ([b3c0112](https://github.com/wirthus/react-native-ui-kitten/commit/b3c0112))
+* chore: update r script ([a302bfa](https://github.com/wirthus/react-native-ui-kitten/commit/a302bfa))
+* chore: update scripts ([13fc881](https://github.com/wirthus/react-native-ui-kitten/commit/13fc881))
+* fix: Autocomplete can't be focused #1744 (#1747) ([ee7aa83](https://github.com/wirthus/react-native-ui-kitten/commit/ee7aa83)), closes [#1744](https://github.com/wirthus/react-native-ui-kitten/issues/1744) [#1747](https://github.com/wirthus/react-native-ui-kitten/issues/1747)
+* fix: Autocomplete width resize when active/focus #1736 (#1741) ([900ce06](https://github.com/wirthus/react-native-ui-kitten/commit/900ce06)), closes [#1736](https://github.com/wirthus/react-native-ui-kitten/issues/1736) [#1741](https://github.com/wirthus/react-native-ui-kitten/issues/1741)
+* fix: components ([8d6be49](https://github.com/wirthus/react-native-ui-kitten/commit/8d6be49))
+* fix: datefns ([44e8c15](https://github.com/wirthus/react-native-ui-kitten/commit/44e8c15))
+* fix: eva-icons ([f06bc85](https://github.com/wirthus/react-native-ui-kitten/commit/f06bc85))
+* fix: metro-config is not working in bare react native project (#1734) ([839d846](https://github.com/wirthus/react-native-ui-kitten/commit/839d846)), closes [#1734](https://github.com/wirthus/react-native-ui-kitten/issues/1734)
+* fix: some doc fixes (#1738) ([8510840](https://github.com/wirthus/react-native-ui-kitten/commit/8510840)), closes [#1738](https://github.com/wirthus/react-native-ui-kitten/issues/1738)
+* fix: TabView and shouldLoadComponent bounces between tabs #1234 (#1746) ([adac8e5](https://github.com/wirthus/react-native-ui-kitten/commit/adac8e5)), closes [#1234](https://github.com/wirthus/react-native-ui-kitten/issues/1234) [#1746](https://github.com/wirthus/react-native-ui-kitten/issues/1746)
+* Chore: add View wrapper to TouchableOpacity container ([a7449db](https://github.com/wirthus/react-native-ui-kitten/commit/a7449db))
+* Update README.md ([fa89cde](https://github.com/wirthus/react-native-ui-kitten/commit/fa89cde))
+
+
+
 ## <small>5.3.1 (2023-04-26)</small>
 
 * fix: BottomNavigation vertical align [issue](https://github.com/akveo/react-native-ui-kitten/issues/ ([254f451](https://github.com/akveo/react-native-ui-kitten/commit/254f451)), closes [#1721](https://github.com/akveo/react-native-ui-kitten/issues/1721)
