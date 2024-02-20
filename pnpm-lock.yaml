@@ -253,7 +253,7 @@ importers:
 
   src/date-fns:
     dependencies:
-      '@ui-kitten/components':
+      '@wirthus/ui-kitten-components':
         specifier: 5.3.1
         version: link:../components
       date-fns:
@@ -262,7 +262,7 @@ importers:
 
   src/eva-icons:
     dependencies:
-      '@ui-kitten/components':
+      '@wirthus/ui-kitten-components':
         specifier: 5.3.1
         version: link:../components
       react:
@@ -305,7 +305,7 @@ importers:
 
   src/moment:
     dependencies:
-      '@ui-kitten/components':
+      '@wirthus/ui-kitten-components':
         specifier: 5.3.1
         version: link:../components
       moment:
@@ -323,10 +323,10 @@ importers:
       '@react-navigation/web':
         specifier: ^1.0.0-alpha.9
         version: 1.0.0-alpha.9(@react-navigation/core@3.7.9)(react-dom@18.2.0)(react@18.2.0)
-      '@ui-kitten/components':
+      '@wirthus/ui-kitten-components':
         specifier: 5.3.1
         version: link:../components
-      '@ui-kitten/eva-icons':
+      '@wirthus/ui-kitten-eva-icons':
         specifier: 5.3.1
         version: link:../eva-icons
       awesome-debounce-promise:
