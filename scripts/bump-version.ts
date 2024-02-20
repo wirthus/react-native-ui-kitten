@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as fs from 'fs';
 import * as gulp from 'gulp';
 import {
@@ -14,33 +16,18 @@ const PACKAGES: string[] = [
   'eva-icons',
   'metro-config',
   'moment',
-  'template-js',
-  'template-ts',
-];
-
-const TEMPLATES: string[] = [
-  'template-js/template',
-  'template-ts/template',
 ];
 
 const VERSION: string = require(`${ROOT_DIR}/package.json`).version;
 
 gulp.task('bump-version', gulp.parallel(
   bumpPackages,
-  bumpTemplates,
   bumpMasterPackage,
 ));
 
 function bumpPackages(done: GulpCompletionCallback): void {
   PACKAGES.map(createPathToPackageJson)
-          .map(bumpVersionAndFrameworkDependencies);
-
-  done();
-}
-
-function bumpTemplates(done: GulpCompletionCallback): void {
-  TEMPLATES.map(createPathToPackageJson)
-           .map(bumpFrameworkDependencies);
+    .map(bumpVersionAndFrameworkDependencies);
 
   done();
 }
@@ -56,23 +43,19 @@ function createPathToPackageJson(packageName: string): string {
 }
 
 function isFrameworkPackage(packageName: string): boolean {
-  return packageName.startsWith('@ui-kitten');
+  return packageName.startsWith('@wirthus/ui-kitten');
 }
 
 function bumpVersionAndFrameworkDependencies(packagePath: string): void {
   return modifyPackageJson(packagePath, (json: PackageJson): PackageJson => {
     json.version = VERSION;
-    logBump(null, json.name);
+    logBump('root', json.name);
 
     return bumpFrameworkDependenciesAndPeerDependencies(json);
   });
 }
 
-function bumpFrameworkDependencies(packagePath: string): void {
-  return modifyPackageJson(packagePath, bumpFrameworkDependenciesAndPeerDependencies);
-}
-
-function modifyPackageJson(packagePath: string, updater: (json: PackageJson) => PackageJson) {
+function modifyPackageJson(packagePath: string, updater: (json: PackageJson) => PackageJson): void {
   const updatedPackageJson: PackageJson = updater(require(packagePath));
 
   fs.writeFileSync(packagePath, JSON.stringify(updatedPackageJson, null, 2));
@@ -81,20 +64,20 @@ function modifyPackageJson(packagePath: string, updater: (json: PackageJson) => 
 function bumpFrameworkDependenciesAndPeerDependencies(json: PackageJson): PackageJson {
   if (json.dependencies) {
     Object.keys(json.dependencies)
-          .filter(isFrameworkPackage)
-          .forEach((packageName: string): void => {
-            json.dependencies[packageName] = VERSION;
-            logBump(json.name, packageName);
-          });
+      .filter(isFrameworkPackage)
+      .forEach((packageName: string): void => {
+        json.dependencies[packageName] = VERSION;
+        logBump(json.name, packageName);
+      });
   }
 
   if (json.peerDependencies) {
     Object.keys(json.peerDependencies)
-          .filter(isFrameworkPackage)
-          .forEach((packageName: string): void => {
-            json.peerDependencies[packageName] = VERSION;
-            logBump(json.name, packageName);
-          });
+      .filter(isFrameworkPackage)
+      .forEach((packageName: string): void => {
+        json.peerDependencies[packageName] = VERSION;
+        logBump(json.name, packageName);
+      });
   }
 
   return json;
