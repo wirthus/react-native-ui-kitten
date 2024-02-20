@@ -9,24 +9,18 @@
   "bugs": {
     "url": "https://github.com/akveo/react-native-ui-kitten/issues"
   },
-  "workspaces": {
-    "packages": [
-      "src/*",
-      "docs"
-    ]
-  },
   "scripts": {
-    "demo": "yarn --cwd ../kittenTricks",
+    "demo": "pnpm --cwd ../kittenTricks",
     "build": "gulp build",
     "clean": "rimraf ./dist",
     "lint": "eslint -c .eslintrc.js ./src",
     "test": "jest",
     "parse-docs": "gulp parse-docs",
-    "view-docs": "cd src/showcases/ && npm run env -- dev && cd ../.. && yarn parse-docs && cd docs && yarn start && cd ..",
+    "view-docs": "cd src/showcases/ && npm run env -- dev && cd ../.. && pnpm parse-docs && cd docs && pnpm start && cd ..",
     "bump-version": "gulp bump-version && conventional-changelog -i CHANGELOG.md -s",
     "publish-docs": "npm run parse-docs && gulp publish-docs",
     "publish-packages": "gulp publish-packages",
-    "r": "rm -rf node_modules && find ./src -name \"node_modules\" -type d -prune -exec rm -rf '{}' + && rm -rf docs/node_modules && yarn",
+    "r": "rm -rf node_modules && find ./src -name \"node_modules\" -type d -prune -exec rm -rf '{}' + && rm -rf docs/node_modules && pnpm i",
     "check": "tsc --noEmit"
   },
   "dependencies": {
