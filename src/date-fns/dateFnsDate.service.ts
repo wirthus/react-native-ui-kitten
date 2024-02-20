@@ -8,8 +8,7 @@ import {
   NativeDateService,
   NativeDateServiceOptions,
 } from '@ui-kitten/components';
-import dateFnsParse from 'date-fns/parse';
-import dateFnsFormat from 'date-fns/format';
+import { parse as dateParse, format as dateFormat } from 'date-fns';
 
 export interface DateFnsOptions extends NativeDateServiceOptions {
   parseOptions?: {
@@ -42,14 +41,14 @@ export class DateFnsService extends NativeDateService {
 
   public format(date: Date, format: string): string {
     if (date) {
-      return dateFnsFormat(date, format || this.options.format, (this.options as DateFnsOptions).formatOptions);
+      return dateFormat(date, format || this.options.format, (this.options as DateFnsOptions).formatOptions);
     }
 
     return '';
   }
 
   public parse(date: string, format: string): Date {
-    return dateFnsParse(date, format || this.options.format, new Date(), (this.options as DateFnsOptions).parseOptions);
+    return dateParse(date, format || this.options.format, new Date(), (this.options as DateFnsOptions).parseOptions);
   }
 
   public getId(): string {
