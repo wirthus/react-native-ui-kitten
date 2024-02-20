@@ -1,13 +1,13 @@
 /**
  * IMPORTANT: To use Moment make sure to install Moment Date Service
- * npm i @ui-kitten/moment
+ * npm i @wirthus/ui-kitten-moment
  */
 
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import moment from 'moment';
-import { Datepicker, Layout } from '@ui-kitten/components';
-import { MomentDateService } from '@ui-kitten/moment';
+import { Datepicker, Layout } from '@wirthus/ui-kitten-components';
+import { MomentDateService } from '@wirthus/ui-kitten-moment';
 
 const dateService = new MomentDateService();
 

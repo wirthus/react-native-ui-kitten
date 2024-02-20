@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { Avatar, Button, Layout, Popover, Text } from '@ui-kitten/components';
+import { Avatar, Button, Layout, Popover, Text } from '@wirthus/ui-kitten-components';
 
 export const PopoverStyledBackdropShowcase = (): React.ReactElement => {
 

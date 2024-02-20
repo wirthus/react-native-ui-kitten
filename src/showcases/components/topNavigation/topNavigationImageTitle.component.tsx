@@ -9,7 +9,7 @@ import {
   Text,
   TopNavigation,
   TopNavigationAction,
-} from '@ui-kitten/components';
+} from '@wirthus/ui-kitten-components';
 
 
 const MenuIcon = (props): IconElement => (

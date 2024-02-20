@@ -1,11 +1,11 @@
 /**
  * IMPORTANT: To use Moment make sure to install Moment Date Service
- * npm i @ui-kitten/moment
+ * npm i @wirthus/ui-kitten-moment
  */
 
 import React from 'react';
-import { Calendar } from '@ui-kitten/components';
-import { MomentDateService } from '@ui-kitten/moment';
+import { Calendar } from '@wirthus/ui-kitten-components';
+import { MomentDateService } from '@wirthus/ui-kitten-moment';
 import moment from 'moment';
 
 const dateService = new MomentDateService();

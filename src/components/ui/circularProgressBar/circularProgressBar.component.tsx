@@ -22,14 +22,14 @@ import {
   EvaStatus,
   RenderProp,
   FalsyFC,
-} from '@ui-kitten/components/devsupport';
+} from '@wirthus/ui-kitten-components/devsupport';
 import {
   IconProps,
   styled,
   StyledComponentProps,
   StyleType,
   Text,
-} from '@ui-kitten/components';
+} from '@wirthus/ui-kitten-components';
 import { CircularProgressBarAnimation, CircularProgressBarAnimationConfig } from './animation';
 
 type CircularProgressBarStyledProps = Overwrite<StyledComponentProps, {
@@ -391,5 +391,3 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
 });
-
-

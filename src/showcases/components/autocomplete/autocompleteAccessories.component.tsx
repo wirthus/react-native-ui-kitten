@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { TouchableWithoutFeedback } from 'react-native';
-import { Autocomplete, AutocompleteItem, Icon, IconElement } from '@ui-kitten/components';
+import { Autocomplete, AutocompleteItem, Icon, IconElement } from '@wirthus/ui-kitten-components';
 
 const movies = [
   { title: 'Star Wars' },
@@ -68,4 +68,3 @@ export const AutocompleteAccessoriesShowcase = (): React.ReactElement => {
     </Autocomplete>
   );
 };
-

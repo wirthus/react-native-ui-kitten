@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { Layout, Toggle } from '@ui-kitten/components';
+import { Layout, Toggle } from '@wirthus/ui-kitten-components';
 
 export const ToggleStatesShowcase = (): React.ReactElement => {
 

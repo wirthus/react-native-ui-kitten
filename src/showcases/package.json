@@ -1,5 +1,5 @@
 {
-  "name": "@ui-kitten/showcases",
+  "name": "@wirthus/ui-kitten-showcases",
   "version": "5.0.0-alpha.1",
   "private": true,
   "workspaces": {
@@ -19,8 +19,8 @@
     "@eva-design/eva": "^2.2.0",
     "@eva-design/material": "^2.2.0",
     "@react-navigation/web": "^1.0.0-alpha.9",
-    "@ui-kitten/components": "5.3.1",
-    "@ui-kitten/eva-icons": "5.3.1",
+    "@wirthus/ui-kitten-components": "5.3.1",
+    "@wirthus/ui-kitten-eva-icons": "5.3.1",
     "awesome-debounce-promise": "^2.1.0",
     "expo": "~46.0.21",
     "expo-updates": "~0.14.7",

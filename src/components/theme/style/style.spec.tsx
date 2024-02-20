@@ -31,7 +31,7 @@ import {
   useStyleSheet,
 } from './style.service';
 import { ThemeStyleType } from '@eva-design/dss';
-import { ThemeType } from '@ui-kitten/components';
+import { ThemeType } from '@wirthus/ui-kitten-components';
 
 const theme = {
   defaultColor: '#000000',

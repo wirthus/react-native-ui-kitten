@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { EvaProp, Text, withStyles } from '@ui-kitten/components';
+import { EvaProp, Text, withStyles } from '@wirthus/ui-kitten-components';
 
 const ThemedComponent = ({ eva }: { eva: EvaProp }): React.ReactElement => (
   <View style={eva.style.container}>
@@ -21,4 +21,3 @@ export const WithStylesSimpleUsageShowcase = withStyles(ThemedComponent, theme =
     backgroundColor: theme['color-info-default'],
   },
 }));
-

@@ -7,7 +7,7 @@
 import {
   NativeDateService,
   NativeDateServiceOptions,
-} from '@ui-kitten/components';
+} from '@wirthus/ui-kitten-components';
 import { parse as dateParse, format as dateFormat } from 'date-fns';
 
 export interface DateFnsOptions extends NativeDateServiceOptions {

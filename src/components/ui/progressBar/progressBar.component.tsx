@@ -18,12 +18,12 @@ import {
   EvaStatus,
   LiteralUnion,
   Overwrite,
-} from '@ui-kitten/components/devsupport';
+} from '@wirthus/ui-kitten-components/devsupport';
 import {
   styled,
   StyledComponentProps,
   StyleType,
-} from '@ui-kitten/components';
+} from '@wirthus/ui-kitten-components';
 import { ProgressBarAnimation, ProgressBarAnimationConfig } from './animation';
 
 type ProgressBarStyledProps = Overwrite<StyledComponentProps, {

@@ -1,13 +1,13 @@
 {
-  "name": "ui-kitten",
+  "name": "@wirthus/ui-kitten",
   "version": "5.3.1",
   "private": true,
   "license": "MIT",
   "author": "akveo <contact@akveo.com>",
-  "homepage": "https://github.com/akveo/react-native-ui-kitten#readme",
-  "repository": "git+https://github.com/akveo/react-native-ui-kitten.git",
+  "homepage": "https://github.com/wirthus/react-native-ui-kitten#readme",
+  "repository": "git+https://github.com/wirthus/react-native-ui-kitten.git",
   "bugs": {
-    "url": "https://github.com/akveo/react-native-ui-kitten/issues"
+    "url": "https://github.com/wirthus/react-native-ui-kitten/issues"
   },
   "scripts": {
     "demo": "pnpm --cwd ../kittenTricks",

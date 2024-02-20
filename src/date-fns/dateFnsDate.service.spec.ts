@@ -5,7 +5,7 @@
  */
 
 
-import { DateService } from '@ui-kitten/components';
+import { DateService } from '@wirthus/ui-kitten-components';
 import { DateFnsService } from './dateFnsDate.service';
 
 describe('@date-fns: service checks', () => {

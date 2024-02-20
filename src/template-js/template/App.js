@@ -19,8 +19,8 @@ import {
   IconRegistry,
   Layout,
   Text,
-} from '@ui-kitten/components';
-import { EvaIconsPack } from '@ui-kitten/eva-icons';
+} from '@wirthus/ui-kitten-components';
+import { EvaIconsPack } from '@wirthus/ui-kitten-eva-icons';
 import * as eva from '@eva-design/eva';
 
 /**
@@ -28,12 +28,12 @@ import * as eva from '@eva-design/eva';
  * https://akveo.github.io/eva-icons
  */
 const HeartIcon = (props) => (
-  <Icon {...props} name='heart'/>
+  <Icon {...props} name='heart' />
 );
 
 export default () => (
   <>
-    <IconRegistry icons={EvaIconsPack}/>
+    <IconRegistry icons={EvaIconsPack} />
     <ApplicationProvider {...eva} theme={eva.light}>
       <Layout style={styles.container}>
         <Text style={styles.text} category='h1'>

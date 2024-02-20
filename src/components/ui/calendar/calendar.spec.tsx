@@ -25,7 +25,7 @@ import {
   CalendarProps,
 } from './calendar.component';
 import { CalendarViewModes } from './type';
-import { MomentDateService } from '@ui-kitten/moment';
+import { MomentDateService } from '@wirthus/ui-kitten-moment';
 import { Text } from '../text/text.component';
 
 describe('@calendar: component checks', () => {
