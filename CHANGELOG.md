@@ -1,3 +1,15 @@
+## <small>5.3.3 (2024-02-21)</small>
+
+* chore: Docs: remove ([eb4f9b1](https://github.com/wirthus/react-native-ui-kitten/commit/eb4f9b1))
+* chore: EvaIcons: add missing packages ([53b1c98](https://github.com/wirthus/react-native-ui-kitten/commit/53b1c98))
+* chore: exclude *.spec files from build ([71ed7fc](https://github.com/wirthus/react-native-ui-kitten/commit/71ed7fc))
+* chore: fix build script ([0b8146d](https://github.com/wirthus/react-native-ui-kitten/commit/0b8146d))
+* chore: MetroConfig: add missing packages ([4b1f4a1](https://github.com/wirthus/react-native-ui-kitten/commit/4b1f4a1))
+* chore: Template: remove ([4dcf796](https://github.com/wirthus/react-native-ui-kitten/commit/4dcf796))
+* fix: EvaIcons: passing tintColor to Icon ([8287754](https://github.com/wirthus/react-native-ui-kitten/commit/8287754))
+
+
+
 ## <small>5.3.2 (2024-02-20)</small>
 
 * chore: add .eslintignore ([4bebf3a](https://github.com/wirthus/react-native-ui-kitten/commit/4bebf3a))

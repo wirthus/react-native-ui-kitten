@@ -1,6 +1,6 @@
 {
   "name": "@wirthus/ui-kitten",
-  "version": "5.3.2",
+  "version": "5.3.3",
   "private": true,
   "license": "MIT",
   "author": "akveo <contact@akveo.com>",
@@ -20,8 +20,7 @@
     "publish-packages": "gulp publish-packages",
     "init": "pnpm install",
     "ts:build": "tsc -p tsconfig.build.json",
-    "ts:check": "tsc --noEmit",
-    "print:esint": "eslint --print-config .eslintrc.js > _eslint.txt"
+    "ts:check": "tsc --noEmit"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",

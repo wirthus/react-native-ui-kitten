@@ -1,7 +1,7 @@
 {
   "name": "@wirthus/ui-kitten-date-fns",
   "description": "date-fns services for UI Kitten",
-  "version": "5.3.2",
+  "version": "5.3.3",
   "author": "akveo <contact@akveo.com>",
   "license": "MIT",
   "homepage": "https://github.com/wirthus/react-native-ui-kitten#readme",
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@wirthus/ui-kitten-components": "5.3.2",
+    "@wirthus/ui-kitten-components": "5.3.3",
     "date-fns": "^3.3.1"
   },
   "sideEffects": false
