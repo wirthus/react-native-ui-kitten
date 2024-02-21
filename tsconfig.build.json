@@ -8,6 +8,7 @@
     "./src/**/package.json"
   ],
   "exclude": [
+    "src/**/*.spec.ts",
     "./src/showcases",
     "node_modules",
     "babel.config.js",
