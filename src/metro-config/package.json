@@ -26,7 +26,8 @@
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "@types/lodash.merge": "^4.6.9"
+    "@types/lodash.merge": "^4.6.9",
+    "rimraf": "^5.0.5"
   },
   "peerDependencies": {
     "metro-config": "*"
