@@ -10,17 +10,13 @@
     "url": "https://github.com/wirthus/react-native-ui-kitten/issues"
   },
   "scripts": {
-    "demo": "pnpm --cwd ../kittenTricks",
     "build": "gulp build",
     "clean": "rimraf ./dist",
     "clean:nm": "rm -rf node_modules && find ./src -name \"node_modules\" -type d -prune -exec rm -rf '{}' + && rm -rf docs/node_modules",
     "lint": "eslint -c .eslintrc.js ./src",
     "lint:fix": "eslint -c .eslintrc.js ./src --fix",
     "test": "jest",
-    "parse-docs": "gulp parse-docs",
-    "view-docs": "cd src/showcases/ && npm run env -- dev && cd ../.. && pnpm parse-docs && cd docs && pnpm start && cd ..",
     "bump-version": "gulp bump-version && conventional-changelog -i CHANGELOG.md -s",
-    "publish-docs": "npm run parse-docs && gulp publish-docs",
     "publish-packages": "gulp publish-packages",
     "init": "pnpm install",
     "ts:build": "tsc -p tsconfig.build.json",
