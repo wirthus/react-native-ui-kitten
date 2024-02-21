@@ -1,5 +1,6 @@
 import childProcess from 'child_process';
-import * as gulp from 'gulp';
+import gulp from 'gulp';
+import { cpSync } from 'fs';
 import { GulpCompletionCallback, PACKAGES_DIR, PACKAGES_BUILD_DIR } from './common';
 
 gulp.task('build', gulp.series(
@@ -17,6 +18,6 @@ function compileTypescript(done: GulpCompletionCallback): void {
  * Could not be handled by configuring tsconfig.json
  */
 function linkNotCompiledSource(done: GulpCompletionCallback): void {
-  childProcess.execSync(`cp -r ${PACKAGES_DIR}/metro-config/bin ${PACKAGES_BUILD_DIR}/metro-config`);
+  cpSync(`${PACKAGES_DIR}/metro-config/bin`, `${PACKAGES_BUILD_DIR}/metro-config/bin`, { recursive: true });
   done();
 }
