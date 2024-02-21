@@ -6,6 +6,7 @@
 
 import React from 'react';
 import {
+  GestureResponderEvent,
   ImageProps,
   NativeSyntheticEvent,
   Platform,
@@ -55,6 +56,9 @@ export interface InputProps extends TextInputProps, InputStyledProps {
   accessoryLeft?: RenderProp<Partial<ImageProps>>;
   accessoryRight?: RenderProp<Partial<ImageProps>>;
   textStyle?: StyleProp<TextStyle>;
+  containerOnPress?: (event: GestureResponderEvent) => void;
+  containerOnPressIn?: (event: GestureResponderEvent) => void;
+  containerOnPressOut?: (event: GestureResponderEvent) => void;
 }
 
 export type InputElement = React.ReactElement<InputProps>;
@@ -180,6 +184,11 @@ export class Input extends React.Component<InputProps> implements WebEventRespon
     this.props.onBlur?.(event);
   };
 
+  private containerOnPress = (event: GestureResponderEvent): void => {
+    this.props.containerOnPress?.(event);
+    this.focus();
+  };
+
   private getComponentStyle = (source: StyleType): StyleType => {
     const flatStyles: ViewStyle = StyleSheet.flatten(this.props.style);
     const { rest: inputContainerStyle, ...containerStyle } =
@@ -256,6 +265,9 @@ export class Input extends React.Component<InputProps> implements WebEventRespon
       accessoryLeft,
       accessoryRight,
       testID,
+      containerOnPress,
+      containerOnPressIn,
+      containerOnPressOut,
       ...textInputProps
     } = this.props;
 
@@ -266,7 +278,9 @@ export class Input extends React.Component<InputProps> implements WebEventRespon
         testID={`@${testID}/container`}
         style={evaStyle.container}
         focusable={false}
-        onPress={this.focus}
+        onPress={this.containerOnPress}
+        onPressIn={containerOnPressIn}
+        onPressOut={containerOnPressOut}
       >
         <View>
           <FalsyText
