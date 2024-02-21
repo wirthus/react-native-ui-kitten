@@ -1,3 +1,10 @@
+## <small>5.3.4 (2024-02-21)</small>
+
+* chore: exclude *.spec files from build ([12d7a93](https://github.com/wirthus/react-native-ui-kitten/commit/12d7a93))
+* feat: Components: forward events OnPress, OnPressIn, OnPressOut from input container ([0ce1b98](https://github.com/wirthus/react-native-ui-kitten/commit/0ce1b98))
+
+
+
 ## <small>5.3.3 (2024-02-21)</small>
 
 * chore: Docs: remove ([eb4f9b1](https://github.com/wirthus/react-native-ui-kitten/commit/eb4f9b1))
