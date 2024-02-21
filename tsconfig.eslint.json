@@ -9,8 +9,6 @@
     "./src/**/package.json"
   ],
   "exclude": [
-    "./src/template-js",
-    "./src/template-ts",
     "node_modules"
   ]
 }

@@ -24,6 +24,5 @@ module.exports = {
     react: {
       version: '18.0.0',
     },
-  },
-  ignorePatterns: ["src/template-js", "src/template-ts"]
+  }
 };

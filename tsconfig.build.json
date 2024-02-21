@@ -9,8 +9,6 @@
   ],
   "exclude": [
     "./src/showcases",
-    "./src/template-js",
-    "./src/template-ts",
     "node_modules",
     "babel.config.js",
     "metro.config.js",

@@ -9,8 +9,6 @@ module.exports = {
   ],
   modulePathIgnorePatterns: [
     '<rootDir>/src/showcases/',
-    '<rootDir>/src/template-js/',
-    '<rootDir>/src/template-ts/',
   ],
   testPathIgnorePatterns: [
     '<rootDir>/node_modules',
