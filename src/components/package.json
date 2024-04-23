@@ -29,8 +29,8 @@
     "hoist-non-react-statics": "^3.3.2",
     "lodash.merge": "^4.6.2",
     "react": "^18.2.0",
-    "react-native": "^0.73.7",
-    "react-native-svg": "^14.1.0"
+    "react-native": "^0.74.0",
+    "react-native-svg": "^15.2.0"
   },
   "devDependencies": {
     "@types/lodash.merge": "^4.6.9",
