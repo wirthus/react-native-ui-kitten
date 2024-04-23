@@ -1,3 +1,12 @@
+## 5.4.0 (2024-04-23)
+
+* chore: add ncurc config ([1fdbc60](https://github.com/wirthus/react-native-ui-kitten/commit/1fdbc60))
+* chore: update pnpm lockfileVersion ([97c2eaa](https://github.com/wirthus/react-native-ui-kitten/commit/97c2eaa))
+* chore: upgrade packages ([b2dfd2c](https://github.com/wirthus/react-native-ui-kitten/commit/b2dfd2c))
+* chore: upgrade React Native to 0.74 ([684e58f](https://github.com/wirthus/react-native-ui-kitten/commit/684e58f))
+
+
+
 ## <small>5.3.4 (2024-02-21)</small>
 
 * chore: exclude *.spec files from build ([12d7a93](https://github.com/wirthus/react-native-ui-kitten/commit/12d7a93))
